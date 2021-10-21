@@ -51,4 +51,4 @@ The above steps basically imply that you need to create a bunch of users and the
 Of course, you can change the argument passed to `factory()` method to create the number of posts you desire. Just be mindful regarding it tho; attempting to seed tons of records at once might take a lot of time and can even cause a buffer overflow which might result the entire operation to fail.
 
 
-**Note:** _This web application allows users to upload images for the post thumbnail and the user avatar. I haven't implemented a feature that enables the users to crop an image before uploading it or resizes the image before storing it into the file system. High-resolution images take some time to load depending on the user's internet speed._
+**Note:** _This web application allows users to upload images for the post thumbnail and the user avatar. I haven't implemented a feature that enables the users to crop an image before uploading it or resizes the image before storing it into the file system. High-resolution images might take some time to load depending on the user's internet speed._
