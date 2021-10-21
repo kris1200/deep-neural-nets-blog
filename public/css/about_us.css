@@ -1,0 +1,57 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            position: relative;
+            overflow: visible;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 120vh;
+            background: linear-gradient(0deg, rgba(182, 34, 195, 1) 18%, rgba(253, 45, 102, 1) 92%);
+        }
+        
+        .container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            position: absolute;
+            text-align: center;
+            font-size: 4rem;
+            z-index: 1000;
+            top: 10vh;
+            font-weight: bold;
+            background: linear-gradient(340deg, rgba(91, 79, 193, 1) 44%, rgba(32, 241, 53, 1) 92%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        #about_us_para {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            position: absolute;
+            text-align: center;
+            color: white;
+            z-index: 999;
+            top: 20vh;
+            max-width: 90%;
+        }
+        
+        .blockclass {
+            border-radius: 10%;
+            position: absolute;
+            height: 10vw;
+            width: 10vw;
+            background: linear-gradient(0deg, rgba(34, 195, 169, 1) 18%, rgba(46, 253, 45, 1) 92%);
+            box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2)
+        }

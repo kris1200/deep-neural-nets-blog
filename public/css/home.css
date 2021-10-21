@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&family=Slabo+27px&display=swap');
+:root {
+    --posts_box_initial_width: calc(50vw + 2px);
+    --thumbnail_intial_width: 50vw;
+    --posts_box_left_push: 10vw;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#no_posts_found {
+    margin: 20vh 5vw;
+    font-family: "Slabo", serif;
+}
+
+#posts_container {
+    position: relative;
+    max-width: 100%;
+    margin-top: 14vh;
+}
+
+#posts_box {
+    border-radius: 10px;
+    width: var(--posts_box_initial_width);
+    -webkit-box-shadow: 12px 13px 16px 2px rgba(183, 35, 255, 0.59);
+    box-shadow: 12px 13px 16px 2px rgba(183, 35, 255, 0.59);
+}
+
+#show_post_link {
+    text-decoration: none;
+}
+
+#post_info_container {
+    /* Set margin-top and margin-bottom of 1.5vh, and margin-right and margin-left of 0.7vw */
+    margin: 1.5vh 0.7vw;
+}
+
+#post_author_and_date_container {
+    font-size: 1rem;
+}
+
+#post_title {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    background: -webkit-linear-gradient(0deg, rgba(195, 34, 159, 1) 7%, rgba(100, 45, 253, 1) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#thumbnail {
+    width: var(--thumbnail_intial_width);
+    aspect-ratio: 9/5;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+}
+
+
+/*
+Note:
+    -> min-width = greater than or equal to (>=)
+    -> max-width = lesser than or equal to (<=)
+*/
+
+
+/* Large-screen sized monitors and laptops */
+
+@media(min-width: 1280px) {
+    /* Initially defined */
+    #posts_container {
+        left: var(--posts_box_left_push);
+    }
+}
+
+
+/* Small-screen sized monitors and laptops */
+
+@media(max-width: 1279.98px) and (min-width: 1024px) {
+    /* Same as large-screen sized monitors and laptops */
+    #posts_container {
+        left: var(--posts_box_left_push);
+    }
+}
+
+
+/* Tablets */
+
+@media(max-width: 1023.98px) and (min-width: 640px) {
+    /* The posts should be centered on tablets occupying 60% of the viewport width*/
+    #posts_container_parent {
+        display: flex;
+        justify-content: center;
+    }
+    #thumbnail {
+        width: 70vw;
+    }
+    #posts_box {
+        width: calc(70vw + 2px);
+    }
+}
+
+
+/* Smartphones */
+
+@media(max-width: 639.98px) and (min-width: 320px) {
+    /* The posts should be centered on smartphones occupying 90% of the viewport width */
+    #posts_container_parent {
+        display: flex;
+        justify-content: center;
+    }
+    #thumbnail {
+        width: 90vw;
+    }
+    #posts_box {
+        width: calc(90vw + 2px);
+    }
+    #post_title {
+        font-size: 1.2rem;
+    }
+    #post_info_container {
+        /* Set margin-top and margin-bottom of 1.2vh, and margin-right and margin-left of 0.7vw */
+        margin: 1.2vh 0.7vw;
+    }
+    #post_author_and_date_container {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Wearables */
+
+@media(max-width: 319.98px) {
+    /* The posts should be centered on smartphones occupying 90% of the viewport width */
+    #posts_container_parent {
+        display: flex;
+        justify-content: center;
+    }
+    #thumbnail {
+        width: 90vw;
+    }
+    #posts_box {
+        width: calc(90vw + 2px);
+    }
+    #post_title {
+        font-size: 0.8rem;
+    }
+    #post_info_container {
+        /* Set margin-top and margin-bottom of 1vh, and margin-right and margin-left of 0.5vw */
+        margin: 1vh 0.5vw;
+    }
+    #post_author_and_date_container {
+        font-size: 0.6rem;
+    }
+}
+
+
+/* This rule is for when the navbar obscures the main content on small devices with landscape orientation */
+
+@media(max-width: 850px) and (orientation: landscape) {
+    #posts_container_parent {
+        padding-top: 15vh;
+    }
+}

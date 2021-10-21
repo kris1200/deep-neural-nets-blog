@@ -1,0 +1,144 @@
+:root {
+    --thumbnail_preview_initial_width: 50vw;
+}
+
+#creation_failure_container {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 12vh;
+    z-index: 10;
+}
+
+#creation_failure {
+    background: gray;
+    color: white;
+}
+
+#create_post {
+    width: var(--thumbnail_preview_initial_width);
+    position: relative;
+    top: 20vh;
+    margin-bottom: 30vh;
+}
+
+#body_input {
+    height: 40vh;
+}
+
+#thumbnail_preview_container {
+    margin-top: 3vh;
+}
+
+#thumbnail_preview {
+    width: var(--thumbnail_preview_initial_width);
+    aspect-ratio: 9/5;
+    object-fit: cover;
+}
+
+
+/* Labels */
+
+.form_input_label {
+    font-size: 1.5rem;
+}
+
+
+/* ------ */
+
+
+/* Input fields */
+
+.create_form_input {
+    font-size: 1.25rem;
+}
+
+
+/* ------------- */
+
+
+/*
+Note:
+    -> min-width = greater than or equal to (>=)
+    -> max-width = lesser than or equal to (<=)
+*/
+
+
+/* Large-screen sized monitors and laptops */
+
+@media(min-width: 1280px) {}
+
+
+/* Small-screen sized monitors and laptops */
+
+@media(max-width: 1279.98px) and (min-width: 1024px) {}
+
+
+/* Tablets */
+
+@media(max-width: 1023.98px) and (min-width: 640px) {
+    #create_post {
+        width: 80vw;
+        position: relative;
+        top: 15vh;
+    }
+    #thumbnail_preview {
+        width: 80vw;
+    }
+    .form_input_label {
+        font-size: 1.25rem;
+    }
+    .create_form_input {
+        font-size: 1.125rem;
+    }
+}
+
+
+/* Smartphones */
+
+@media(max-width: 639.98px) and (min-width: 320px) {
+    #create_post {
+        width: 90vw;
+        position: relative;
+        top: 20vh;
+    }
+    #thumbnail_preview {
+        width: 90vw;
+    }
+    .form_input_label {
+        font-size: 1.125rem;
+    }
+    .create_form_input {
+        font-size: 1rem;
+    }
+}
+
+
+/* Wearables */
+
+@media(max-width: 319.98px) {
+    #create_post {
+        width: 90vw;
+        position: relative;
+        top: 20vh;
+    }
+    #thumbnail_preview {
+        width: 90vw;
+    }
+    .form_input_label {
+        font-size: 1rem;
+    }
+    .create_form_input {
+        font-size: 1rem;
+    }
+}
+
+
+/* This rule is for when the navbar obscures the main content on small devices with landscape orientation */
+
+@media(max-width: 850px) and (orientation: landscape) {
+    #create_post_container {
+        padding-top: 15vh;
+    }
+}

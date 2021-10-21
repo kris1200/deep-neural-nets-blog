@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+:root {
+    --thumbnail_initial_width: 60vw;
+    --thumbnail_tablet_width: 75vw;
+    --thumbnail_smartphone_width: 90vw;
+}
+
+
+/* Set to a display value of flex, this div's width depends on the thumbnail's width */
+
+#post_container {
+    position: relative;
+    left: 10vw;
+    margin-top: 7vw;
+    width: var(--thumbnail_initial_width);
+}
+
+
+/* The post title */
+
+#post_title {
+    max-width: 100%;
+    font-family: 'Crete Round', serif;
+    font-size: 3rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-weight: bolder;
+}
+
+
+/* This div is a container for the post information (author avatar, author name, publish date) */
+
+#post_info_container {
+    margin-top: 2vh;
+}
+
+
+/* If an avatar is present */
+
+#post_author_avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+}
+
+
+/* The name will be displayed anyways */
+
+#post_author_name {
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+
+/* The styles defined in this block will be applied if the path to the post author's profile pic is found */
+
+
+/* #post_author_info_container {} */
+
+
+/* The styles defined in this block will be applied if the path to the post author's profile pic is not found */
+
+
+/* #post_author_name_container {} */
+
+
+/* A span containing the string "published at" */
+
+#published_at {
+    font-style: italic;
+    color: gray;
+}
+
+
+/* A span container an actual publish date */
+
+#publish_date {
+    font-weight: 700;
+}
+
+
+/* A div containing the post's thumbnail */
+
+#thumbnail_container {
+    max-width: var(--thumbnail_initial_width);
+    margin-top: 7vh;
+}
+
+
+/* The actual post thumbnail */
+
+#thumbnail {
+    width: var(--thumbnail_initial_width);
+    aspect-ratio: 9/5;
+    object-fit: cover;
+}
+
+
+/* A div containing the post body */
+
+#post_body_container {
+    position: relative;
+    max-width: 100%;
+    margin-top: 5vh;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+/* The actual post body */
+
+#post_body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    white-space: pre-line;
+}
+
+
+/*
+Note:
+    -> min-width = greater than or equal to (>=)
+    -> max-width = lesser than or equal to (<=)
+*/
+
+
+/* Large-screen sized monitors and laptops */
+
+@media(min-width: 1280px) {}
+
+
+/* Small-screen sized monitors and laptops */
+
+@media(max-width: 1279.98px) and (min-width: 1024px) {}
+
+
+/* Tablets */
+
+@media(max-width: 1023.98px) and (min-width: 640px) {
+    #thumbnail {
+        width: var(--thumbnail_tablet_width);
+    }
+    #post_title {
+        font-size: 2.5rem;
+    }
+    #post_container_parent {
+        display: flex;
+        justify-content: center;
+    }
+    #post_body {
+        font-size: 1.2rem;
+    }
+    #post_container {
+        position: static;
+        margin-top: 10vh;
+        width: var(--thumbnail_tablet_width);
+    }
+}
+
+
+/* Smartphones */
+
+@media(max-width: 639.98px) and (min-width: 320px) {
+    #thumbnail {
+        width: var(--thumbnail_smartphone_width);
+    }
+    #post_title {
+        font-size: 2rem;
+    }
+    #post_body {
+        font-size: 1.1rem;
+    }
+    #post_container_parent {
+        display: flex;
+        justify-content: center;
+    }
+    #post_container {
+        position: static;
+        margin-top: 10vh;
+        width: var(--thumbnail_smartphone_width);
+    }
+    /* I don't know why, but for some reason, I'd set the pipe's display value to "none" for smaller devices. Maybe I will change it when I'm able to recall the reason */
+    /* #pipe {
+        display: none;
+    } */
+    #publish_date_container {
+        display: block;
+        margin-top: 1vw;
+    }
+}
+
+
+/* Wearables */
+
+@media(max-width: 319.98px) {
+    #post_title {
+        font-size: 1.2rem;
+        margin-top: 10vh;
+    }
+    /* The thumbnail maintains the width percentage equivalent to that defined in the smartphone's breakpoint.  */
+    #thumbnail {
+        width: var(--thumbnail_smartphone_width);
+    }
+    #post_body {
+        font-size: 0.8rem;
+    }
+    #post_container_parent {
+        display: flex;
+        justify-content: center;
+    }
+    #post_container {
+        position: static;
+        margin-top: 10vh;
+        width: var(--thumbnail_smartphone_width);
+    }
+    /* I don't know why, but for some reason, I'd set the pipe's display value to "none" for smaller devices. Maybe I will change it when I'm able to recall the reason */
+    /* #pipe {
+        display: none;
+    } */
+    #publish_date_container {
+        display: block;
+        margin-top: 1vw;
+    }
+}
+
+
+/* This rule is for when the navbar obscures the main content on small devices with landscape orientation */
+
+@media(max-width: 850px) and (orientation: landscape) {
+    #post_container_parent {
+        padding-top: 20vh;
+    }
+}

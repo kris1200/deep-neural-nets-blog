@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+#navbar {
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 96%);
+}
+
+.navbar .nav-item {
+    padding: 10px 10px;
+}
+
+.navbar .nav-link {
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+}
+
+#searchForm {
+    max-width: 17.5rem;
+}

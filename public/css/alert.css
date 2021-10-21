@@ -1,0 +1,20 @@
+.alert {
+    border: none;
+    z-index: 10;
+    font-size: 1rem;
+    color: white;
+    top: 10vh;
+    left: 2vw;
+}
+
+#deletion_success {
+    background: linear-gradient(0deg, rgba(195, 34, 124, 1) 4%, rgba(253, 45, 63, 1) 89%);
+}
+
+#update_success {
+    background: linear-gradient(0deg, rgba(50, 34, 195, 1) 4%, rgba(45, 200, 253, 1) 89%);
+}
+
+#creation_success {
+    background: linear-gradient(0deg, rgba(34, 195, 169, 1) 4%, rgba(46, 253, 45, 1) 89%);
+}
