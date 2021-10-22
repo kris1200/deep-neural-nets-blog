@@ -10,7 +10,7 @@ class SearchController extends Controller
     public function search(Request $request)
     {
         $query = $request->input('query');
-        //When the user hits the "/search_posts" route without providing any query parameters, this method returns all the posts from the database. Throwing a 404 warning response can prevent it.
+        //When the user hits the "/search_posts" route without providing any query parameters, this method returns literally every post from the database. Aborting the operation straightaway can prevent it.
         if (trim($query) == "") {
             return abort(404);
         }

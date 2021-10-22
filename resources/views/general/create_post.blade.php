@@ -79,18 +79,18 @@
 
     {{-- {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{ For testing purposes }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} --}}
     <script>
-        function makeid(length) {
-            var result = '';
-            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-            var charactersLength = characters.length;
-            for (var i = 0; i < length; i++) {
-                result += characters.charAt(Math.floor(Math.random() *
-                    charactersLength));
-            }
-            return result;
-        }
-        document.getElementById("body_input").innerHTML = makeid(1000)
-        document.getElementById("title_input").value = makeid(50);
+        // function makeid(length) {
+        //     var result = '';
+        //     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        //     var charactersLength = characters.length;
+        //     for (var i = 0; i < length; i++) {
+        //         result += characters.charAt(Math.floor(Math.random() *
+        //             charactersLength));
+        //     }
+        //     return result;
+        // }
+        // document.getElementById("body_input").innerHTML = makeid(1000)
+        // document.getElementById("title_input").value = makeid(50);
 
     </script>
     {{-- {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} --}}

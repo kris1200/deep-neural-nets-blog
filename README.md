@@ -10,7 +10,7 @@ First things first - let's install and setup this project.
    ```
    composer update
    ```     
-3. There  should be a file named `.env.example` in the root directory of the project. Rename it to `.env`
+3. There should be a file named `.env.example` in the root directory of the project. Rename it to `.env`
 4. With the assumption that you are using MySQL Database, create a database named `dnn_blog`
 5. Generate an app encryption-key using the following command: 
    ```
