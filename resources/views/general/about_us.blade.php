@@ -21,8 +21,7 @@
         Deep Neural Nets (DNN) is an open-source project developed solely for fun and educational purposes. It is built based on the MVC architecture using PHP, JavaScript, HTML & CSS. That's all there is to know about this project. Have a good day! :)
     </p>
 
-    {{-- I tried running this animation and it's giving my computer strokes --}}
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
     <script>
         const container = document.querySelector('.container');
         for (var i = 0; i <= 7; i++) {
@@ -53,7 +52,7 @@
 
         animateBlocks();
 
-    </script> --}}
+    </script>
     <x-bs_js />
 
 
