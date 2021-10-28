@@ -334,9 +334,9 @@ class Request
     public static function create(string $uri, string $method = 'GET', array $parameters = [], array $cookies = [], array $files = [], array $server = [], $content = null)
     {
         $server = array_replace([
-            'SERVER_NAME' => '192.168.0.165:8000',
+            'SERVER_NAME' => '//localhost',
             'SERVER_PORT' => 80,
-            'HTTP_HOST' => '192.168.0.165:8000',
+            'HTTP_HOST' => '//localhost',
             'HTTP_USER_AGENT' => 'Symfony',
             'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5',
