@@ -1,6 +1,6 @@
 First things first - let's install and setup this project. 
 
-**Note:** _You might want to disable the AntiVirus software, if any, before attempting to run this application on your computer, as it might block the execution or even delete any file required to run this project. I promise this project doesn't contain any sort of malicious file!_
+**Note:** _Your AntiVirus may flag the `server.php` file as a threat and try to block it's execution or even delete it. If that inhibits you from running this  project locally, you might want to add it as an exception to your AntiVirus._
 
 # Installation
 
