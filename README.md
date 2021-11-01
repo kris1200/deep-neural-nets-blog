@@ -52,7 +52,7 @@ Of course, you can change the argument passed to `factory()` method to create th
 
 # Configuring the environment variable to send e-mails
 
-The authentication for this application is implemented using [Laravel Jetstream](https://jetstream.laravel.com/2.x/introdu). Jetstream allows users to reset their passwords via an e-mail that includes the password-reset link. To enable your application to be able to send e-mails to those users, you need to configure a few environment variables by following the following steps: 
+The authentication for this application is implemented using [Laravel Jetstream](https://jetstream.laravel.com/2.x/introduction.html). Jetstream allows users to reset their passwords via an e-mail that includes the password-reset link. To enable your application to be able to send e-mails to those users, you need to configure a few environment variables by following the following steps: 
 
 (I assume your Google account has 2-step verification enabled and that you already have an app password generated for you.)
 
