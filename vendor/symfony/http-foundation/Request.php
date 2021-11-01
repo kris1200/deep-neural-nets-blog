@@ -334,7 +334,7 @@ class Request
     public static function create(string $uri, string $method = 'GET', array $parameters = [], array $cookies = [], array $files = [], array $server = [], $content = null)
     {
         $server = array_replace([
-            'SERVER_NAME' => '//localhost',
+            'SERVER_NAME' => '//127.0.0.1',
             'SERVER_PORT' => 80,
             'HTTP_HOST' => '//localhost',
             'HTTP_USER_AGENT' => 'Symfony',
