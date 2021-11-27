@@ -52,7 +52,7 @@ Of course, you can change the argument passed to `factory()` method to create th
 
 # Configuring the environment variables to send e-mails
 
-The authentication for this application is implemented using [Laravel Jetstream](https://jetstream.laravel.com/2.x/introduction). Jetstream allows users to reset their passwords via an e-mail that includes the password-reset link. To enable your application to be able to send e-mails to those users, you need to configure a few environment  by following the following steps: 
+The authentication for this application is implemented using [Laravel Jetstream](https://jetstream.laravel.com/2.x/introduction). Jetstream allows users to reset their passwords via an e-mail that includes the password-reset link. To enable your application to be able to send e-mails to those users, you need to configure a few environment variables  by following the following steps: 
 
 (I assume your Google account has 2-step verification enabled and that you already have an app password generated for you.)
 
@@ -70,4 +70,4 @@ MAIL_FROM_NAME="${APP_NAME}"
 ---
 
 **Note:** _This web application allows users to upload images for the post thumbnail and the user avatar. I haven't implemented a feature that enables the users to crop an image before uploading it or resizes the image before storing it into the file system. High-resolution images might take some time to load depending on the user's internet speed._
-sdf
+
